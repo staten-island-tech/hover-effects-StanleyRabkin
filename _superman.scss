@@ -1,0 +1,9 @@
+.superman {
+  height: 10rem;
+  transition: all 0.3s;
+}
+
+.superman:hover {
+  filter: grayscale(100%);
+  transform: scale(1.5);
+}

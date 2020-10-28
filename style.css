@@ -8,9 +8,15 @@
   margin: 1rem auto;
   font-size: 2rem;
   border-radius: 10rem;
+  position: relative;
 }
 
 .btn-blue {
+  background-color: blue;
+  color: black;
+}
+
+.btn-blue::after {
   background-color: blue;
   color: black;
 }
@@ -20,6 +26,48 @@
           transform: scale(1.2);
   -webkit-box-shadow: 0 1rem 0.5rem black;
           box-shadow: 0 1rem 0.5rem black;
+}
+
+.btn::after {
+  content: "";
+  display: inlane-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn:hover::after {
+  -webkit-transform: scaleX(1.5) scaleY(1.6);
+          transform: scaleX(1.5) scaleY(1.6);
+  opacity: 0;
+}
+
+.btn:active {
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+  -webkit-transform: scaleX(1.5) scaleY(1.6);
+          transform: scaleX(1.5) scaleY(1.6);
+  -webkit-box-shadow: 0 0.5rem 1rem black;
+          box-shadow: 0 0.5rem 1rem black;
+}
+
+.superman {
+  height: 10rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.superman:hover {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 .container {
