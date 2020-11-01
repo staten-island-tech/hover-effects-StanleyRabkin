@@ -6,7 +6,7 @@
   text-transform: uppercase;
   text-decoration: none;
   padding: 1.5rem 4rem;
-  background-color: blue;
+  background-color: color(blue);
   margin: 1rem auto;
   font-size: 2rem;
   border-radius: 10rem;
@@ -14,13 +14,13 @@
 }
 
 .btn-blue {
-  background-color: blue;
-  color: black;
+  background-color: color(blue);
+  color: white;
 }
 
 .btn-blue::after {
-  background-color: blue;
-  color: black;
+  background-color: color(blue);
+  color: white;
 }
 
 .btn:hover {
