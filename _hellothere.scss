@@ -1,0 +1,33 @@
+@import "_variables.scss";
+
+.hellothere {
+  height: 30rem;
+  position: relative;
+}
+
+.hellothere-picture {
+  height: 30rem;
+  clip-path: circle();
+  transition: all 0.3s;
+}
+
+.hellothere-header {
+  font-size: 3rem;
+  opacity: 0;
+  color: white;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s;
+  text-transform: uppercase;
+}
+
+.hellothere:hover .hellothere-picture {
+  filter: grayscale(50%);
+}
+
+.hellothere:hover .hellothere-header {
+  opacity: 1;
+  top: 50%;
+}

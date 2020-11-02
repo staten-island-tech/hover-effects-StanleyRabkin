@@ -7,4 +7,5 @@
 .superman:hover {
   filter: grayscale(100%);
   transform: scale(1.7);
+  z-index: 2;
 }

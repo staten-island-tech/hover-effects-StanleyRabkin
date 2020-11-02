@@ -87,6 +87,7 @@ body {
           filter: grayscale(100%);
   -webkit-transform: scale(1.7);
           transform: scale(1.7);
+  z-index: 2;
 }
 
 html,
@@ -117,6 +118,107 @@ body {
   color: #941414;
   -webkit-transform: scaleY(3) scaleX(3);
           transform: scaleY(3) scaleX(3);
+  z-index: 2;
+}
+
+html,
+body {
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.gorilla-parent {
+  width: 60rem;
+  height: 40rem;
+}
+
+.gorilla-gallery {
+  margin: 2rem;
+  position: relative;
+}
+
+.gorilla {
+  position: absolute;
+  height: 20rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.gorilla:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  outline: 1rem solid #ffa600;
+  z-index: 2;
+}
+
+.gorilla-gallery:hover .gorilla:not(:hover) {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  opacity: 0.5;
+}
+
+.gorilla1 {
+  top: 10rem;
+  left: 15%;
+}
+
+.gorilla2 {
+  top: 2rem;
+  right: 0;
+}
+
+.gorilla3 {
+  top: -2rem;
+  left: 0;
+}
+
+html,
+body {
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.hellothere {
+  height: 30rem;
+  position: relative;
+}
+
+.hellothere-picture {
+  height: 30rem;
+  -webkit-clip-path: circle();
+          clip-path: circle();
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.hellothere-header {
+  font-size: 3rem;
+  opacity: 0;
+  color: white;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-transform: uppercase;
+}
+
+.hellothere:hover .hellothere-picture {
+  -webkit-filter: grayscale(50%);
+          filter: grayscale(50%);
+}
+
+.hellothere:hover .hellothere-header {
+  opacity: 1;
+  top: 50%;
 }
 
 .container {

@@ -1,0 +1,43 @@
+@import "_variables.scss";
+
+.gorilla-parent {
+  width: 60rem;
+  height: 40rem;
+}
+
+.gorilla-gallery {
+  margin: 2rem;
+  position: relative;
+}
+
+.gorilla {
+  position: absolute;
+  height: 20rem;
+  transition: all 0.3s;
+}
+
+.gorilla:hover {
+  transform: scale(1.2);
+  outline: 1rem solid color(orange);
+  z-index: 2;
+}
+
+.gorilla-gallery:hover .gorilla:not(:hover) {
+  transform: scale(0.8);
+  opacity: 0.5;
+}
+
+.gorilla1 {
+  top: 10rem;
+  left: 15%;
+}
+
+.gorilla2 {
+  top: 2rem;
+  right: 0;
+}
+
+.gorilla3 {
+  top: -2rem;
+  left: 0;
+}
